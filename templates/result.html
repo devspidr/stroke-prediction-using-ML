@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        {% if prediction == "Stroke" %}
+            <p>The model predicts: <strong>{{ prediction }}</strong>. <br>Please consult a doctor immediately {{ name }}.</p>
+        {% else %}
+            <p>Sorry {{ name }}, you do not have a stroke as per our prediction. Stay healthy!</p>
+        {% endif %}
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
