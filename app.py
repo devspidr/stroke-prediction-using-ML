@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import logging
 
-# Logging setup
+# Logging setup 
 logging.basicConfig(level=logging.DEBUG)
 
 # Load the trained model
